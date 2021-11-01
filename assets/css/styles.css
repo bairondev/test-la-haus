@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Variables - colors*/
+:root{
+    --lh-bg-gray: #E5F0EE;
+    --lh-caribbean-green: #3ECFAF;
+    --lh-green-gray: #5B6866;
+    --lh-jungle-green: #012D26;
+    --lh-sky-blue: #3948FF;
+    --lh-md-blue: #EBEDFF;
+}

@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'test-la-haus',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
@@ -13,11 +13,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    bodyAttrs: {
+      class: "font-silka1"
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/css/styles.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
