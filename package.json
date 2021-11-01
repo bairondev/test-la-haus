@@ -2,6 +2,11 @@
   "name": "test-la-haus",
   "version": "1.0.0",
   "private": true,
+  "author":{
+    "name": "@bairondev",
+    "email": "help@bairon.dev",
+    "url": "https://bairon.dev/"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
