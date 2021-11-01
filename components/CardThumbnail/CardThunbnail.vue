@@ -1,5 +1,4 @@
 <template>
-    <!-- card -->
     <div
         class="mb-6">
         <a href="#">
@@ -45,5 +44,4 @@
         </p>
         </div>
     </div>
-    <!-- card -->
 </template>

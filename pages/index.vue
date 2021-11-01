@@ -8,31 +8,13 @@
         <!-- cardList -->
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 p-4">
-
-          
+          <!-- card - thumbnail -->
           <CardThunbnail />
+          <!-- card - thumbnail -->
           
-
           <!-- card - NewList -->
-            <div
-              class="mb-7">
-              <a
-                href="#"
-                class="rounded-lg w-full bg-cp5 h-48 flex justify-center items-center">
-                  <MoreIcon />
-              </a>
-              <div
-                class="mt-4">
-                <h4
-                  class="text-cp3 text-lg text-center font-medium mb-2">
-                  <a href="#">
-                    Crear una nueva lista
-                  </a>
-                </h4>
-              </div>
-            </div>
+            <CardNew />
           <!-- card - NewList -->
-
         </div>
         <!-- cardList -->
       </div>
@@ -40,13 +22,14 @@
 </template>
 
 <script>
-import MoreIcon from '../components/icons/MoreIcon.vue';
+import axios from 'axios'
 import CardThunbnail from '../components/CardThumbnail/CardThunbnail.vue';
+import CardNew from '../components/CardNew/CardNew.vue';
 
 export default {
-  components: {
-    MoreIcon,
-    CardThunbnail
+  components: { 
+    CardThunbnail,
+    CardNew
   }
 }
 </script>
