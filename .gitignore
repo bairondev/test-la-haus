@@ -89,6 +89,8 @@ sw.*
 # Vim swap files
 *.swp
 
+.vscode/
+
 NOTE.md
 Note.md
 
