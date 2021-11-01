@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Silka-regular';
+  src: local('Silka-regular'),
+    url('../fonts/silka-regular-webfont.woff2') format('woff2') /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Silka-medium';
+  src: local('Silka-medium'),
+    url('../fonts/silka-medium-webfont.woff2') format('woff2') /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Silka-bold';
+  src: local('Silka-bold'),
+    url('../fonts/silka-semibold-webfont.woff2') format('woff2') /* Super Modern Browsers */
+}
