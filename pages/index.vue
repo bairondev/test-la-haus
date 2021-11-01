@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
 import CardThunbnail from '../components/CardThumbnail/CardThunbnail.vue';
 import CardNew from '../components/CardNew/CardNew.vue';
 
@@ -30,6 +30,41 @@ export default {
   components: { 
     CardThunbnail,
     CardNew
+  },
+  data(){
+    return{
+      favorites:[],
+      images:[]
+    }
+  },
+  async created(){
+
+    //consulta a la api
+    const apiFavorites = await axios.get(
+        process.env.baseUrl+"/real-estates"
+      );
+
+    this.favorites = apiFavorites.data.data;
+    this.images = apiFavorites.data.included;
+
+    // Insertamos las imagenes teniendo como referencias los id del nodo real_estate_ids
+    this.favorites.map((item)=>{
+
+      this.images.forEach((element) => {
+        let id = parseInt(element.id);
+        let thumbnail = item.attributes.real_estate_ids;
+        let urlImage = element.attributes.gallery_urls[0];
+
+        thumbnail.filter((image, key)=>{
+          image == id
+            ? thumbnail[key] = urlImage
+            : null
+          });
+
+      })
+
+    })
+  
   }
 }
 </script>
