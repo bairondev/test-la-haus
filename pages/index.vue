@@ -1,6 +1,6 @@
 <template>
   <main
-      class="max-w-5xl mx-auto">
+      class="max-w-5xl mx-auto min-h-85">
       <div class="mx-auto max-w-6xl">
         <h2 class="font-silka2 font-semibold text-xl md:text-3xl text-center my-4 md:mt-14 mb-9 py-1">
           Listas de favoritos

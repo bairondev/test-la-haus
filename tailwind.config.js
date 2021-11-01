@@ -5,6 +5,9 @@ module.exports = {
       silka2: ["Silka-medium"],
       silka3: ["Silka-bold"]
     },
+    minHeight: {
+      '85': '85vh'
+    },
     extend: {
       colors: {
         main: "var(--lh-caribbean-green)",
