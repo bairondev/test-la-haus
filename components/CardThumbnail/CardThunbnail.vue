@@ -7,12 +7,10 @@
             <figure
             class="relative w-full h-48">
             <!-- one image-->
-            <nuxt-img
-                quality="20" 
+            <img
                 class="absolute z-30 inline object-cover h-48 border border-white rounded-xl bg-cp4"
                 :class="total === 1 ? 'w-full' : 'w-1/2'"
                 :src="images[0]"
-                preset="thumbnail"
                 :alt="name"/>
                 <!-- one image-->
             <!-- second image-->

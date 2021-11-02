@@ -23,17 +23,6 @@ export default {
   css: [
     '~/assets/css/styles.css',
   ],
-  image: {
-    presets: {
-      thumbnail: {
-        modifiers: {
-          format: 'jpg',
-          width: 50,
-          height: 50
-        }
-      }
-    }
-  },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -50,7 +39,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxt/image',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
