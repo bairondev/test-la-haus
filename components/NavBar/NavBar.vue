@@ -2,7 +2,7 @@
   <header
     class="w-full border-b border-cp4 px-4 py-4 z-50 fixed bg-white top-0">
     <div class="max-w-6xl flex items-center md:justify-between mx-auto">
-      <!-- Menu Mobile -->
+      <!-- Button - Menu Mobile -->
       <div
         class="mr-2 flex md:hidden">
         <button
@@ -22,7 +22,7 @@
           </div>
         <!-- notification -->
       </div>
-      <!-- Menu Mobile -->
+      <!-- Button - Menu Mobile -->
       <!-- logo-->
       <div class="logo overflow-hidden w-8 md:w-auto">
         <MainLogo />
@@ -45,6 +45,7 @@
               @click="showPerfil"
               class="flex items-center group-hover:text-main">
               Mi Perfil
+              <client-only>     
               <!-- arrow -->
               <svg
                 class="w-5 group-hover:text-main fill-current"
@@ -54,11 +55,11 @@
                 </svg>
                 <!-- arrow -->
                 <!-- notification -->
-                <div
+                <span
                   class="rounded-full -mt-4 -ml-1 hidden md:flex items-center justify-center w-3 h-3 bg-main">
-                  </div>
+                  </span>
                 <!-- notification -->
-
+              </client-only>
             </button>
             <!-- dropdown / menu -->
             <div

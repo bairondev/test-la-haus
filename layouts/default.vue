@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pt-14">
+    class="pt-16 md:pt-14">
     <NavBar/>
     <Nuxt />
     <Footer />
