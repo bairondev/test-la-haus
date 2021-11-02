@@ -9,7 +9,12 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 p-4">
           <!-- card - thumbnail -->
+          <!-- load card -->
+          <CardSkeleton
+            v-if="load" />
+          <!-- load card -->
           <CardThunbnail
+            :v-if="!load" 
             v-for="{id, attributes} in favorites"
             :key="id"
             :name="attributes.name"
@@ -28,18 +33,21 @@
 
 <script>
 import axios from 'axios';
+import CardSkeleton from '../components/CardSkeleton/CardSkeleton.vue';
 import CardThunbnail from '../components/CardThumbnail/CardThunbnail.vue';
 import CardNew from '../components/CardNew/CardNew.vue';
 
 export default {
   components: { 
+    CardSkeleton,
     CardThunbnail,
     CardNew
   },
   data(){
     return{
       favorites:[],
-      images:[]
+      images:[],
+      load: true,
     }
   },
   async created(){
@@ -67,6 +75,8 @@ export default {
           });
 
       })
+
+      this.load = false;
 
     })
   

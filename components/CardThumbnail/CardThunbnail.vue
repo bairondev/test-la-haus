@@ -7,15 +7,17 @@
             <figure
             class="relative w-full h-48">
             <!-- one image-->
-            <img
-                class="absolute z-30 inline object-cover h-48 border border-white rounded-xl"
+            <nuxt-img
+                quality="20" 
+                class="absolute z-30 inline object-cover h-48 border border-white rounded-xl bg-cp4"
                 :class="total === 1 ? 'w-full' : 'w-1/2'"
                 :src="images[0]"
+                preset="thumbnail"
                 :alt="name"/>
                 <!-- one image-->
             <!-- second image-->
             <img
-                class="absolute z-20 inline object-cover h-48 border border-white rounded-xl"
+                class="absolute z-20 inline object-cover h-48 border border-white rounded-xl bg-cp4"
                 :class="total === 2 ? 'right-0 w-7/12 md:w-48' : 'w-5/12 sm:w-3/5 right-12 sm:right-14 md:right-10 mr-4 sm:mr-2 md:mr-2 lg:mr-4'"
                 :src="images[1]"
                 :alt="name"/>
