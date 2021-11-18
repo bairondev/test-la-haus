@@ -66,5 +66,5 @@
 export default{
     name: "CardThumbnail",
     props: ['name', 'images', 'total']
-}
+};
 </script>

@@ -27,6 +27,6 @@ export default {
     name: 'CardNew',
     components: {
         MoreIcon
-    }
-}
+    },
+};
 </script>

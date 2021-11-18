@@ -4,15 +4,12 @@ module.exports = {
     '^~/(.*)$': '<rootDir>/$1',
     '^vue$': 'vue/dist/vue.common.js'
   },
-  moduleFileExtensions: [
-    'js',
-    'vue',
-    'json'
-  ],
+  moduleFileExtensions: ["js", "ts", "json", "vue"],
   transform: {
-    '^.+\\.js$': 'babel-jest',
-    '.*\\.(vue)$': 'vue-jest'
+    '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
+    '.*\\.(vue)$': '@vue/vue2-jest'
   },
+  transformIgnorePatterns: ["/node_modules"],
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/components/**/*.vue',

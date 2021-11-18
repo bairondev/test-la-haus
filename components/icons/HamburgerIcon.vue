@@ -8,9 +8,3 @@
         <path d="M30 5H2V7H30V5Z" fill="#5B6866"/>
     </svg>
 </template>
-
-<script>
-export default {
-    name: "HamburgerIcon",
-}
-</script>

@@ -13,9 +13,3 @@
         transform="translate(3.5 3.49999)"/>
       </svg>
 </template>
-
-<script>
-export default {
-    name: "CloseIcon",
-}
-</script>
